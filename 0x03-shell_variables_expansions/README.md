@@ -1,7 +1,7 @@
 # 0x03. Shell init files, variables and expansions
 An Introductory project to initialization files, local vs global variables, shell expansion, and shell arithmetic.
-## Script Descriptions:
-* **[0-alias][0-alias]** - creates an alias for `rm *` named `ls`.
+## Script Descriptions: 
+**[0-alias](0-alias)** - creates an alias for `rm *` named `ls`.
 * **1-hello_you** - prints `hello *user*`, where `*user*` is the current Linux user.
 * **2-path** - adds the directory `/action` to the end of the `PATH`.
 * **3-paths** - counts the number of directories in the `PATH`.
