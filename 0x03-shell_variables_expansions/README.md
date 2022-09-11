@@ -20,11 +20,11 @@ An Introductory project to initialization files, local vs global variables, shel
   * Do not print `oo`
   * Script file should contain a maximum of 64 characters
 * **13-print_float** - prints a number stored in the environment variable `NUM` with two decimal places.
-* **14-decimal_to_hexadecimal** - converts a number stored in the environment variable `DECIMAL` from base 10 to base 16 and displays it followed by a new line.
-* **100-rot13** - encodes and decodes text using the rot13 encryption.
-* **101-odd** - prints every other line from the input, starting with the first line.
-* **102-water_and_stir** - adds the two numbers stored in the environment variables `WATER` and `STIR` and prints the result where:
+* **100-decimal_to_hexadecimal** - converts a number stored in the environment variable `DECIMAL` from base 10 to base 16 and displays it followed by a new line.
+* **101-rot13** - encodes and decodes text using the rot13 encryption.
+* **102-odd** - prints every other line from the input, starting with the first line.
+* **103-water_and_stir** - adds the two numbers stored in the environment variables `WATER` and `STIR` and prints the result where:
   * `WATER` is in base `water`
   * `STIR` is in base `stir.`
-  * The result should be in base `behlnort`
+  * The result should be in base `bestchol`
 
