@@ -1,0 +1,33 @@
+# Insert link here
+
+The pictorial reference to this writing is located in the link above..
+
+The Server
+- The server in the diagram is located in a datacenter (a specially designed structure to hold thousands of machines).
+- It could either be a physical or virtual (i.e an instance of a physical server).
+- The server (physical or virtual) also runs a special operating system that helps it perform its services to the end users.
+
+One Web Server
+- An NGINX web server is installed in the server for serving "static" web content (i.e hard-coded content that needs no changes when delivered to the user) over the protocol, HTTP.
+
+One Application Server
+- This application server's fundamental purpose is to process web server requests and generate dynamic content from a business logic and application database in the backend.
+
+One Database
+- The primary role of the database is to store application data.
+
+Domain Name / Domain Name System (DNS)
+- The DNS helps translate the domain name record to an IP address
+- The hosted website by the infrastructure; www.foobar.com is an A record because it resolves to an IP address(IPV4), 8.8.8.8
+
+
+Problems With This Infrastructure
+- Server is a Single Point of Failure (SPOF)
+This infrastructure design has no redundant server as a backup if the single server present failed. This presents a "single point of failure" as the application would crash due to the malfunctioning of the server.
+- Downtime In Maintenance
+Rebooting of the server after maintenance practice e.g deploying new code, would cause a downtime as the sole server would be unavailable for that period of time to carry out its functionalities for the clients.
+- Unscalability
+This infrastructure is unscalable due to its single server, web server, application server and absence of a load balancer to handle multiple requests to it.
+
+Protocol
+The server here uses the TCP/IP protocol to communicate with the computer of the user requesting the website.
