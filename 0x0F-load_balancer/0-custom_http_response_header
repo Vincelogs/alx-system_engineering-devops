@@ -8,4 +8,4 @@ sed -i "47i\\\tadd_header X-Served-By $HOSTNAME;" /etc/nginx/sites-available/def
 echo "Hello World!" | tee /var/www/html/index.html
 echo "Ceci n'est pas une page" > /var/www/html/404.html
 
-service nginx start
+sudo service nginx restart
