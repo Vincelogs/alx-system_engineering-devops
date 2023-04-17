@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# redirects port 8080/TCP to port 80/TCP.
+
+sudo sed -i '73i # NAT table rules\n*nat\n:PREROUTING ACCEPT [0:0]\n-A PREROUTING -p tcp --dport 8080 -j REDIRECT --to-port 80' /etc/ufw/before.rules
