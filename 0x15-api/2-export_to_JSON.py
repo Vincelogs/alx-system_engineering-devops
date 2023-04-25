@@ -6,9 +6,9 @@ import json
 
 
 if __name__ == '__main__':
-    endpoint = 'https://jsonplaceholder.typicode.com'
-    usr = get(endpoint + '/users/' + argv[1]).json()['username']
-    todos = get(endpoint + '/todos?userId=' + argv[1]).json()
+    url = 'https://jsonplaceholder.typicode.com'
+    usr = get(url + '/users/' + argv[1]).json()['username']
+    todos = get(url + '/todos?userId=' + argv[1]).json()
 
     record, user_data, group = {}, {}, []
     for todo in todos:
