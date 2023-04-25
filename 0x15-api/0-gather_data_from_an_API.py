@@ -1,20 +1,34 @@
 #!/usr/bin/python3
 ''' gather data from an API '''
-import requests
+import requests as rq
 from sys import argv
 
 if __name__ == '__main__':
-    # get employee response [used to get name in line 19]
-    endpoint = 'https://jsonplaceholder.typicode.com'
-    user_res = requests.get(endpoint + '/users/' + argv[1]).json()
+    # Base URL for the JSONPlacehoder API
+    url = "https://jsonplaceholder.typicode.com"
 
-    # get total number of tasks [used to get len of all tasks in line 18]
-    todos = requests.get(endpoint + '/todos?userId=' + argv[1]).json()
+    # Get user ID as arg
+    user_id = int(argv[1])
 
-    # get number completed tasks and their titles
-    titles_done = [todo['title'] for todo in todos if todo['completed']]
+    # Send a GET request to the API to get the user's name
+    user_name = rq.get(f"{url}/users/{user_id}").json()["name"]
 
+    # Send a GET request to the API to get the user's TODO_list
+    todos = rq.get(f"{url}/todos?userID={user_id}").json()
+
+    #  Extract user specific todos
+    user_todos = []
+    for todo in todos:
+        if todo['userId'] == user_id:
+            user_todos.append(todo)
+
+    # Calculate the number of completed and total tasks
+    total_tasks = len(user_todos)
+    completed_tasks = len([todo for todo in user_todos if todo["completed"]])
+
+    # Print the information about the user's TODO list progress
     print('Employee {} is done with tasks({}/{}):'
-          .format(user_res['name'], len(titles_done), len(todos)))
-
-    [print('\t {}'.format(title)) for title in titles_done]
+          .format(user_name, completed_tasks, total_tasks))
+    for todo in user_todos:
+        if todo["completed"]:
+            print(f"\t{todo['title']}")
