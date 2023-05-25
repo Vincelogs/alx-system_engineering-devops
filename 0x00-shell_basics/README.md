@@ -40,7 +40,7 @@ Use the following commands to access the manual or help pages for specific comma
 
 ## Learning Objectives
 
-At the end of this project, you are expected to be able to explain to anyone, without the help of Google, the following topics:
+At the end of this project, you are expected to be able to [explain to anyone](https://fs.blog/feynman-learning-technique/), without the help of Google, the following topics:
 
 ### General
 - What does RTFM mean?
@@ -149,3 +149,4 @@ julien@ubuntu:/tmp$ ./lll
 lll
 julien@ubuntu:/tmp$
 ```
+
