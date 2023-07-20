@@ -9,7 +9,8 @@ For this project, we expect you to look at this concept:
 <p><img src="https://s3.amazonaws.com/intranet-projects-files/holbertonschool-sysadmin_devops/266/8Gu52Qv.png" alt="step2"></p>
 
 ### Background Context
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=AZg4uJkEa-4&feature=youtu.be&hd=1" frameborder="0" allowfullscreen></iframe>
+<p><iframe width="560" height="315" src="https://www.youtube.com/watch?v=AZg4uJkEa-4&feature=youtu.be&hd=1" frameborder="0" allowfullscreen></p>
+
 In this project, some of the tasks will be graded on 2 aspects:
 
 Is your `web-01` server configured according to requirements
